@@ -1,14 +1,33 @@
 interface Props {
-    children: any
-    class?: string
-    to: string
+    children: any,
+    to?: string
+    class?: string,
     type?: 'transparent' | 'bordered'
 }
+const types = {
+    transparent: 'transparent',
+    bordered: 'bordered'
+}
 
-export function Link({ to, children, class: className }: Props) {
-    return (
-        <a href={to} class={`font-thin -tracking-wider hover:backdrop-brightness-90 transition-all duration-300 text-white px-10 py-2 backdrop-brightness-95 bg-transparent ${className}`}>
-            {children}
-        </a>
-    )
+export function Link({ children, class: className, type, to = '#' }: Props) {
+
+    if (type === types.transparent || !type) {
+        return (
+            <a
+                href={to}
+                class={`w-fit font-light -tracking-wider hover:backdrop-brightness-90 transition-all duration-300 text-white px-10 py-2 backdrop-brightness-95 bg-transparent ${className}`}>
+                {children}
+            </a>
+        )
+    }
+
+    if (type === types.bordered) {
+        return (
+            <a
+                href={to}
+                class={`w-fit font-light uppercase border px-10 py-2 border-black hover:backdrop-brightness-95 transition-all duration-300 ${className}`}>
+                {children}
+            </a>
+        )
+    }
 }

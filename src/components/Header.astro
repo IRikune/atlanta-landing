@@ -1,15 +1,17 @@
 ---
 import { Button } from "./Button";
+import { Link } from "./Link";
 ---
 
 <header class="flex h-dvh justify-between">
     <section class="bg-cyan-200 w-full">
         <h1>Slider</h1>
     </section>
-    <aside class="bg-pumking w-2/3 flex items-end">
+    <aside class="bg-pumking w-2/3 flex flex-col justify-end">
+        <Link class="self-center my-2"> Standard </Link>
+        <Link class="self-center my-2" type="bordered"> Standard </Link>
         <h1 class="text-4xl font-light text-balance m-10">
             Find the easiest way to get what you need in Atlanta
         </h1>
-        <Button> Hola </Button>
     </aside>
 </header>
