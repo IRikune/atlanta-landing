@@ -4,14 +4,17 @@ import { Link } from "./Link";
 ---
 
 <header class="flex h-dvh justify-between">
-    <section class="bg-cyan-200 w-full">
-        <h1>Slider</h1>
-    </section>
+    <section id="slider" class="bg-cyan-200 w-full bg-cover"></section>
     <aside class="bg-pumking w-2/3 flex flex-col justify-end">
-        <Link class="self-center my-2"> Standard </Link>
         <h1 class="text-4xl font-light text-balance m-10">
             Find the easiest way to get what you need in Atlanta
         </h1>
         <Link class="mx-10 my-3" type="bordered"> find a worker </Link>
     </aside>
 </header>
+
+<style>
+    #slider {
+        background-image: url(../../public/images/city.jpg);
+    }
+</style>
