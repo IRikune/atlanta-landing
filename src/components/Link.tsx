@@ -15,7 +15,7 @@ export function Link({ children, class: className, type, to = '#' }: Props) {
         return (
             <a
                 href={to}
-                class={`w-fit font-light -tracking-wider hover:backdrop-brightness-90 transition-all duration-300 text-white px-10 py-2 backdrop-brightness-95 bg-transparent ${className}`}>
+                class={`w-fit font-light bg-gray-900 -tracking-wider hover:backdrop-brightness-50 transition-all duration-300 text-white px-10 py-2 backdrop-brightness-95 bg-transparent ${className}`}>
                 {children}
             </a>
         )

@@ -4,7 +4,20 @@ import { Link } from "./Link";
 ---
 
 <header class="flex h-dvh justify-between">
-    <section id="slider" class="bg-cyan-200 w-full bg-cover"></section>
+    <section
+        id="slider"
+        class="bg-cyan-200 w-full bg-cover flex flex-col justify-end"
+    >
+        <footer class="m-5 w-1/2">
+            <Button> Looksmith </Button>
+            <h2 class="text-white text-4xl text-balance font-thin my-5">
+                Atlanta Penthouse, by Luis Tirado
+            </h2>
+            <Button type="bordered" class="text-white border-white">
+                Find this Worker
+            </Button>
+        </footer>
+    </section>
     <aside class="bg-pumking w-2/3 flex flex-col justify-end">
         <h1 class="text-4xl font-light text-balance m-10">
             Find the easiest way to get what you need in Atlanta
@@ -15,6 +28,6 @@ import { Link } from "./Link";
 
 <style>
     #slider {
-        background-image: url(../../public/images/city.jpg);
+        background-image: url(../../public/images/town.jpg);
     }
 </style>
