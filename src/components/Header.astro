@@ -3,31 +3,27 @@ import { Button } from "./Button";
 import { Link } from "./Link";
 ---
 
-<header class="flex h-dvh justify-between">
+<header class="flex h-dvh justify-between text-white">
     <section
         id="slider"
         class="bg-cyan-200 w-full bg-cover flex flex-col justify-end"
     >
         <footer class="m-5 w-1/2">
             <Button> Looksmith </Button>
-            <h2 class="text-white text-4xl text-balance font-thin my-5">
-                Atlanta Penthouse, by Luis Tirado
-            </h2>
-            <Button type="bordered" class="text-white border-white">
-                Find this Worker
-            </Button>
         </footer>
     </section>
-    <aside class="bg-pumking w-2/3 flex flex-col justify-end">
+    <aside class="bg-blue-800 w-2/3 flex flex-col justify-end">
         <h1 class="text-4xl font-light text-balance m-10">
-            Find the easiest way to get what you need in Atlanta
+            Find the easiest way to get the Locksmith you need in Atlanta
         </h1>
-        <Link class="mx-10 my-3" type="bordered"> find a worker </Link>
+        <Link class="mx-10 my-3 border-white" type="bordered">
+            find a worker
+        </Link>
     </aside>
 </header>
 
 <style>
     #slider {
-        background-image: url(../../public/images/town.jpg);
+        background-image: url(/images/image1.webp);
     }
 </style>

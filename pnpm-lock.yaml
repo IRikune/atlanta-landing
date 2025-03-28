@@ -35,6 +35,13 @@ importers:
       typescript:
         specifier: ^5.6.3
         version: 5.6.3
+    devDependencies:
+      tailwindcss-intersect:
+        specifier: ^2.2.0
+        version: 2.2.0(tailwindcss@3.4.14)
+      tailwindcss-motion:
+        specifier: ^1.1.0
+        version: 1.1.0(tailwindcss@3.4.14)
 
 packages:
 
@@ -1895,6 +1902,16 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  tailwindcss-intersect@2.2.0:
+    resolution: {integrity: sha512-LnOQ/iU44jNQ8k3OExa7Ccv/y5NlzAN574jjDnX5gLCdlqoeUT5ADtTznF92oAdon3NZA69b+JLknahbwsqxDA==}
+    peerDependencies:
+      tailwindcss: '>=3.2.0 || >=4.0.0'
+
+  tailwindcss-motion@1.1.0:
+    resolution: {integrity: sha512-0lK6rA4+367ffJdi1TtB72GlMCxJi2TP/xRiHc6An5pZSlU6WfIHhSvLxpcGilGZfBrOqc2q4woH1DEP/lCNbQ==}
+    peerDependencies:
+      tailwindcss: '>=3.0.0 || insiders'
 
   tailwindcss@3.4.14:
     resolution: {integrity: sha512-IcSvOcTRcUtQQ7ILQL5quRDg7Xs93PdJEk1ZLbhhvJc7uj/OAhYOnruEiwnGgBvUtaUAJ8/mhSw1o8L2jCiENA==}
@@ -4436,6 +4453,14 @@ snapshots:
       has-flag: 3.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  tailwindcss-intersect@2.2.0(tailwindcss@3.4.14):
+    dependencies:
+      tailwindcss: 3.4.14
+
+  tailwindcss-motion@1.1.0(tailwindcss@3.4.14):
+    dependencies:
+      tailwindcss: 3.4.14
 
   tailwindcss@3.4.14:
     dependencies:

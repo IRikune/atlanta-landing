@@ -1,4 +1,6 @@
 ---
+import Footer from "../components/Footer.astro";
+import Grid from "../components/Grid.astro";
 import Header from "../components/Header.astro";
 import Layout from "../layouts/Layout.astro";
 ---
@@ -10,14 +12,63 @@ import Layout from "../layouts/Layout.astro";
 			class="text-balance lg:mx-48 font-thin my-32 flex flex-col items-center justify-end"
 		>
 			<h2 class="text-center text-4xl block">Speciality in Looksmith.</h2>
-			<p class="text-xl block my-5">
-				Atlanta Multiservices. team of looksmith photographers and
-				videographers is committed to supply you with the best possible
-				images in interior design, hospitality, real estate and
-				architecture. We are dedicated to make your content stand out
-				from the crowd. With the added bonus of great care and quality
-				of service.
+			<p class="text-xl text-pretty my-5">
+				UnlockMe. Trusted automotive locksmiths: specialized solutions
+				for any car issue. Emergency lockouts (zero damage), key
+				programming, transponder duplication, lock repairs, security
+				resets. Certified technicians handle all brands/models (cars,
+				motorbikes, trucks, modern tech). 24/7 fast, precise service
+				with guarantees. Focused on security & mobility. Professional,
+				discreet service—back on the road fast! Trust experts. Your
+				vehicle is in the best hands!
 			</p>
 		</section>
+		<section>
+			<div class="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+					<div class="bg-blue-800 p-8 md:p-12 lg:px-16 lg:py-24">
+						<div class="mx-auto max-w-xl text-center">
+							<h2 class="text-2xl text-white md:text-3xl">
+								Locksmith professionals.
+							</h2>
+
+							<p class="hidden text-white/90 sm:mt-4 sm:block">
+								Emergency lockouts, key programming, transponder
+								keys. 24/7 service. Certified techs handle cars,
+								bikes, trucks. Fast, damage-free solutions.
+								Trust experts!
+							</p>
+
+							<div class="mt-4 md:mt-8">
+								<a
+									href="#"
+									class="inline-block rounded-sm border border-white bg-white px-12 py-3 text-sm font-medium text-blue-500 transition hover:bg-transparent hover:text-white focus:ring-3 focus:ring-yellow-400 focus:outline-hidden"
+								>
+									Contact Us
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="grid grid-cols-2 gap-4 md:grid-cols-1 lg:grid-cols-2"
+					>
+						<img
+							alt=""
+							src="/images/image2.webp"
+							class="h-40 w-full object-cover sm:h-56 md:h-full"
+						/>
+
+						<img
+							alt=""
+							src="/images/image3.webp"
+							class="h-40 w-full object-cover sm:h-56 md:h-full"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<Grid />
+		<Footer />
 	</main>
 </Layout>
