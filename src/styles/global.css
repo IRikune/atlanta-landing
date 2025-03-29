@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+@plugin "tailwindcss-motion";
 @theme {
     --color-pumking: #cd4c3a;
     --font-sans: 'Space Grotesk Variable', sans-serif;
